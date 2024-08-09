@@ -1,0 +1,21 @@
+.header {
+    background: red; 
+    color: white; 
+    padding: 10px; 
+    text-align: center;
+}
+.navbar { 
+    background: green; 
+    color: white; 
+    padding: 10px; 
+}
+.footer { 
+    background: blue; 
+    color: white; 
+    padding: 10px; 
+    text-align: center;
+}
+.header img { 
+    max-height: 50px; 
+    vertical-align: middle;
+}
