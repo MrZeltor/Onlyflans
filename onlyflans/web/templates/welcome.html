@@ -21,5 +21,20 @@
             </div>
         </div>
     {% endfor %}
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            let query = this.value.toLowerCase();
+            let flanes = document.querySelectorAll('.card');
+            
+            flanes.forEach(function(flan) {
+                let name = flan.querySelector('.card-title').textContent.toLowerCase();
+                if (name.includes(query)) {
+                    flan.style.display = 'block';
+                } else {
+                    flan.style.display = 'none';
+                }
+            });
+        });
+        </script>
 </div>
 {% endblock %}
